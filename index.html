@@ -1,0 +1,29 @@
+<!DOCTYPE html>   
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><html lang="en" class="no-js"> <![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Raphael + Box2D</title>
+	<meta name="description" content="Raphael + Box2D">
+	<meta name="keywords" content="">
+	<meta name="author" content="Joseph Cheng @ FOAK Productions Limited - http://www.thefoakhouse.com">
+	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+	
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.js"></script><![endif]--> 
+	<script type="text/javascript" src="js/box2d.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+</head>
+<body>
+	<canvas id="canvas" width="480" height="360"></canvas>
+	<script type="text/javascript">
+		var game = new Game.Engine("canvas", {
+			debug: true
+		});
+		game.start();
+	</script>
+</body>
